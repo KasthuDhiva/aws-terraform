@@ -86,7 +86,7 @@ resource "aws_instance" "jenkins_server" {
     sudo docker volume create sonarqube_logs
     sudo docker volume create sonarqube_db_data
 
-    # Create a Docker Compose file for SonarQube and Postgres
+    
     sudo bash -c 'cat <<EOF > /home/ubuntu/docker-compose.yml
     version: "3.8"
     services:
